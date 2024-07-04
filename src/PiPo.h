@@ -905,7 +905,7 @@ public:
    */
   class EnumAttr : public Attr
   {
-    struct strCompare : public std::binary_function<const char *, const char *, bool>
+    struct strCompare // : public std::binary_function<const char *, const char *, bool>
     {
       bool operator() (const char *str1, const char *str2) const { return std::strcmp(str1, str2) < 0; }
     };
